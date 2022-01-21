@@ -1,3 +1,3 @@
 # RocketNews
 
--Desafio do curso Discover
+Desafio do curso Discover
