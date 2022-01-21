@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-family: 'Spartan', 'Work Sans';
-
 }
 
 :root {
@@ -15,4 +14,130 @@
   --bg-button-color: #8257e5;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap');
+/* BODY */
+body{
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+/* main */
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+section{
+  width: 50%;
+}
+
+/* LOGO */
+.logo{
+  margin: 2rem 1rem;
+}
+
+.logo img{
+  width: 24rem;
+}
+
+section.info{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 2.25rem;
+}
+
+/* section image */
+section.image{
+  height: 100vh;
+  background-image: url(/assets/read_news.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+/* TEXT */
+article{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  max-width: 30rem;
+}
+article .title{
+  color: var(--title-color);
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+article p{
+  font-family: Spartan;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+article .subtitle{
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.email-send {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 115%;
+}
+
+.email-send  input{
+  outline: none;
+  border: none;
+}
+input#email {
+  width: 110%;
+  z-index: 999;
+  padding: 1rem .625rem;
+  border-left: .5rem solid var(--title-color);
+} 
+
+.btn{
+  width: 4rem;
+  border: none;
+  cursor: pointer;
+
+  background-image: url(/assets/send.svg);
+  background-position:center ;
+  background-repeat: no-repeat;
+
+  background-color: var(--bg-button-color);
+} 
+
+.deixe-ler{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.deixe-ler button{
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--bg-button-color);
+  
+  margin-right: .4rem;
+  
+  cursor: pointer;
+  border: none;
+  background-color:rgba(255, 255, 255, 0) ;
+}
